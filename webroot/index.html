@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Nakamura's Little Poacher">
+    <meta name="author" content="kiu Nakamura">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Nakamura's Little Poacher</title>
+    <link href="css/bootstrap-cyborg.min.css" rel="stylesheet">
+  </head>
+
+<body>
+<div class="container">
+
+    <h1>Nakamura's Little Poacher</h1>
+
+    <textarea class="form-control" rows="8" id="textLocal" placeholder="Paste pilots from Local member list in here..."></textarea>
+    <p>
+	<a href="#" class="btn btn-danger" id="btnReset" onclick="actReset();">Reset</a>
+	<a href="#" class="btn btn-success" id="btnAnalyze" onclick="actAnalyze();">Analyze</a>
+    </p>
+
+    <hr>
+
+<table class="table table-striped" id="tblPilots">
+  <thead>
+      <tr>
+            <th>Portrait</th>
+            <th>Name</th>
+            <th>Birth</th>
+            <th>Security</th>
+            <th>History</th>
+            <th>Corporation</th>
+            <th>Alliance</th>
+     </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+</div>
+    <div style="font-size:70%; position:fixed; bottom:1px; right:5px; z-index:23;">Brought to you by <a href="http://evewho.com/pilot/kiu+Nakamura" target="_blank">kiu Nakamura</a> / <a href="http://evewho.com/alli/Brave+Collective" target="_blank">Brave Collective</a></div>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.timeago.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/poacher.js"></script>
+
+</body>
+</html>
